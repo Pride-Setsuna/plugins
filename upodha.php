@@ -85,8 +85,8 @@ function upodha_smart_home_page() {
                     <div class="new-dropdown-section">
                         <label for="new_dropdown1">if:</label><br>
                         <select id="new_dropdown1" name="new_dropdown1">
-                            <option value="option1">Device 1  is triggered</option>
-                            <option value="option2">Device 1  is triggered</option>
+                            <option value="option1">Device 3  is triggered</option>
+                            <option value="option2">Device 3  is triggered</option>
                         </select><br>
                         <button type="button">Add Condition</button>
                     </div>
@@ -94,12 +94,12 @@ function upodha_smart_home_page() {
                     <div class="new-dropdown-section">
                         <label for="new_dropdown2">Then:</label><br>
                         <select id="new_dropdown2" name="new_dropdown2">
-                            <option value="option1">Device 2 turns on</option>
-                            <option value="option2">Option 2</option>
+                            <option value="option1">Device 4 turns on</option>
+                            <option value="option2">Option 4 </option>
                         </select>
                         <select id="new_dropdown2" name="new_dropdown2">
-                            <option value="option1">Device 3 turns on</option>
-                            <option value="option2">Option 3</option>
+                            <option value="option1">Device 5 turns on</option>
+                            <option value="option2">Option 5</option>
                         </select><br>
                         <button type="button">Add Action</button>
                     </div>
