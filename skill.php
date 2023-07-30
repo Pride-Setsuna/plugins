@@ -29,31 +29,13 @@ function unique_plugin_smart_home_page() {
             input[type=text], select {width: 50%; /* update this line */ padding: 1px 1px; margin: 1px 0; display: inline-block; border: 1px solid #ccc; border-radius: 1px; box-sizing: border-box;}
             .new-dropdown-section {margin-top: 30px;}
             .new-dropdown-section button {margin-top: 10px;}
-
-            /* 弹性布局样式 */
-            .flex-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            /* 设备设置和触发条件设置的样式 */
-            .flex-item {
-                width: 48%; /* 设置元素占据的宽度，这样它们能够并排显示 */
-            }
-
-            .device-settings input[type="text"] {
-                width: 100%;
-                max-width: 300px;
-                padding: 1px 1px;
-                margin: 1px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 1px;
-                box-sizing: border-box;
-            }
+            .flex-container {display: flex;flex-direction: row;justify-content: space-between;}
+            .flex-item {width: 48%; }
+            .device-settings input[type="text"] {width: 100%;max-width: 300px;padding: 1px 1px;margin: 1px 0;display: inline-block;border: 1px solid #ccc;border-radius: 1px;box-sizing: border-box;}
         </style>
     </head>
+    
+    
     <body>
         <div class="container">
             <h1>SKILL</h1>
@@ -117,7 +99,6 @@ function unique_plugin_smart_home_page() {
     <?php
 }
 
-// Add a new page in the WordPress admin menu
 function add_unique_plugin_smart_home_page() {
     add_menu_page(
         'SKILL',
