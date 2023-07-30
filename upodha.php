@@ -12,7 +12,7 @@ function upodha_smart_home_page() {
     // Fetch the device status from the API
     // $door_sensor_status = fetch_door_sensor_status();
     // $google_light_status = fetch_google_light_status();
-    // 测试
+
     ?>
     <!DOCTYPE html>
     <html>
@@ -28,7 +28,7 @@ function upodha_smart_home_page() {
             a:hover {color: #0056b3;}
             button {background-color: #007BFF; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 10px 2px; cursor: pointer; border-radius: 5px;}
             button:hover {background-color: #0056b3;}
-            input[type=text], select {width: 20%; /* update this line */ padding: 1px 1px; margin: 1px 0; display: inline-block; border: 1px solid #ccc; border-radius: 1px; box-sizing: border-box;}
+            input[type=text], select {width: 30%; /* update this line */ padding: 1px 1px; margin: 1px 0; display: inline-block; border: 1px solid #ccc; border-radius: 1px; box-sizing: border-box;}
             .new-dropdown-section {margin-top: 30px;}
             .new-dropdown-section button {margin-top: 10px;}
             .flex-sl {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: baseline;}

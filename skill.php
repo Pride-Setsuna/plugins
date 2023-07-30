@@ -11,8 +11,6 @@ function unique_plugin_smart_home_page() {
     // Fetch the device status from the API
     // $door_sensor_status = fetch_door_sensor_status();
     // $google_light_status = fetch_google_light_status();
-    // 测试
-    //现在这是一个测试
     ?>
     <!DOCTYPE html>
     <html>
@@ -28,68 +26,91 @@ function unique_plugin_smart_home_page() {
             a:hover {color: #0056b3;}
             button {background-color: #007BFF; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 10px 2px; cursor: pointer; border-radius: 5px;}
             button:hover {background-color: #0056b3;}
-            input[type=text], select {width: 30%; /* update this line */ padding: 1px 1px; margin: 1px 0; display: inline-block; border: 1px solid #ccc; border-radius: 1px; box-sizing: border-box;}
+            input[type=text], select {width: 50%; /* update this line */ padding: 1px 1px; margin: 1px 0; display: inline-block; border: 1px solid #ccc; border-radius: 1px; box-sizing: border-box;}
             .new-dropdown-section {margin-top: 30px;}
             .new-dropdown-section button {margin-top: 10px;}
+
+            /* 弹性布局样式 */
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            /* 设备设置和触发条件设置的样式 */
+            .flex-item {
+                width: 48%; /* 设置元素占据的宽度，这样它们能够并排显示 */
+            }
+
+            .device-settings input[type="text"] {
+                width: 100%;
+                max-width: 300px;
+                padding: 1px 1px;
+                margin: 1px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 1px;
+                box-sizing: border-box;
+            }
         </style>
-
-
     </head>
     <body>
         <div class="container">
             <h1>SKILL</h1>
-                
-                <h2>Device Settings</h2>
 
-                <label for="api_key">Device Name:</label><br>
-                <input type="text" id="Settings" name="Settings"><br>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h2>Device Settings</h2>
+                    <div class="device-settings">
+                        <label for="api_key">Device Name:</label><br>
+                        <input type="text" id="Settings" name="Settings"><br>
 
-                <label for="api_key">Device ID:</label><br>
-                <input type="text" id="Settings" name="Settings"><br>
+                        <label for="api_key">Device ID:</label><br>
+                        <input type="text" id="Settings" name="Settings"><br>
 
-                <label for="api_key">Device Name:</label><br>
-                <input type="text" id="Settings" name="Settings"><br>
+                        <label for="api_key">Device Name:</label><br>
+                        <input type="text" id="Settings" name="Settings"><br>
 
-                <label for="api_key">Device ID:</label><br>
-                <input type="text" id="Settings" name="Settings"><br>
+                        <label for="api_key">Device ID:</label><br>
+                        <input type="text" id="Settings" name="Settings"><br>
+                    </div>
 
-                <button type="button">Add Action</button>
-
-                <div><button type="button">Save Changes</button></div>
-                
-                <!-- Add new dropdown sections here -->
-                <h2>Trigger Condition Settings</h2>
-                <div class="new-dropdown-section">
-                    <label for="new_dropdown1">if:</label><br>
-                    <select id="new_dropdown1" name="new_dropdown1">
-                        <option value="option1">Carbon Dioxide Concentration>1000ppm</option>
-                        <option value="option2">Carbon Dioxide Concentration>1000ppm</option>
-                    </select><br>
-                    <button type="button">Add Condition</button>
-                </div>
-                
-                <div class="new-dropdown-section">
-                    <label for="new_dropdown2">Then:</label><br>
-                    <select id="new_dropdown2" name="new_dropdown2">
-                        <option value="option1">Device 4 turns on</option>
-                        <option value="option2">Option 4</option>
-                    </select><br>
                     <button type="button">Add Action</button>
+                    <div><button type="button">Save Changes</button></div>
                 </div>
 
-                <div class="new-dropdown-section">
-                    <label for="new_dropdown3">Else:</label><br>
-                    <select id="new_dropdown3" name="new_dropdown3">
-                        <option value="option1">Device4 turns off</option>
-                        <option value="option2"></option>
-                    </select><br>
-                    <button type="button">Add Action</button>
+                <div class="flex-item">
+                    <h2>Trigger Condition Settings</h2>
+                    <div class="new-dropdown-section">
+                        <label for="new_dropdown1">if:</label><br>
+                        <select id="new_dropdown1" name="new_dropdown1">
+                            <option value="option1">Carbon Dioxide Concentration>1000ppm</option>
+                            <option value="option2">Carbon Dioxide Concentration>1000ppm</option>
+                        </select><br>
+                        <button type="button">Add Condition</button>
+                    </div>
+
+                    <div class="new-dropdown-section">
+                        <label for="new_dropdown2">Then:</label><br>
+                        <select id="new_dropdown2" name="new_dropdown2">
+                            <option value="option1">Device 4 turns on</option>
+                            <option value="option2">Option 4</option>
+                        </select><br>
+                        <button type="button">Add Action</button>
+                    </div>
+
+                    <div class="new-dropdown-section">
+                        <label for="new_dropdown3">Else:</label><br>
+                        <select id="new_dropdown3" name="new_dropdown3">
+                            <option value="option1">Device4 turns off</option>
+                            <option value="option2"></option>
+                        </select><br>
+                        <button type="button">Add Action</button>
+                    </div>
+
+                    <div><button type="button">Save Changes</button></div>
                 </div>
-
-                <div><button type="button">Save Changes</button></div>
-
-            </form>
-
+            </div>
         </div>
     </body>
     </html>
