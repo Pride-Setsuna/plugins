@@ -17,7 +17,7 @@ function unique_plugin_smart_home_page() {
     <head>
         <title>SKILL</title>
         <style>
-            body {font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 0; padding: 0;}
+            body {font-family: Arial, sans-serif; background-color: #fff; color: #333; margin: 0; padding: 0;}
             .container {width: 100%; background-color: #fff; border-radius: 5px;}
             h1 {text-align: center; color: #5D6975;}
             h2 {margin-top: 30px; color: #5D6975;}
@@ -30,8 +30,8 @@ function unique_plugin_smart_home_page() {
             .new-dropdown-section {margin-top: 30px;}
             .new-dropdown-section button {margin-top: 10px;}
             .flex-container {display: flex;flex-direction: row;justify-content: flex-start; width: 50%;}
-            .flex-item-one {width: 46%; }
-            .flex-item-two {width: 54%; }
+            .flex-item-one {width: 44%; }
+            .flex-item-two {width: 56%; }
             .device-settings input[type="text"] {width: 100%;max-width: 300px;padding: 1px 1px;margin: 1px 0;display: inline-block;border: 1px solid #ccc;border-radius: 1px;box-sizing: border-box;}
             .head-title {width: 40%; margin-left: 0;}
         </style>
@@ -59,7 +59,7 @@ function unique_plugin_smart_home_page() {
                         <input type="text" id="Settings" name="Settings"><br>
                     </div>
 
-                    <button type="button">Add Action</button>
+                    <button type="button">Add Device</button>
                     <div><button type="button">Save Changes</button></div>
                 </div>
 
@@ -86,7 +86,7 @@ function unique_plugin_smart_home_page() {
                     <div class="new-dropdown-section">
                         <label for="new_dropdown3">Else:</label><br>
                         <select id="new_dropdown3" name="new_dropdown3">
-                            <option value="option1">Device4 turns off</option>
+                            <option value="option1">Device 4 turns off</option>
                             <option value="option2"></option>
                         </select><br>
                         <button type="button">Add Action</button>
