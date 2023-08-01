@@ -17,8 +17,8 @@ function unique_plugin_smart_home_page() {
     <head>
         <title>SKILL</title>
         <style>
-            body {font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333;}
-            .container {width: 80%; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 5px;}
+            body {font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 0; padding: 0;}
+            .container {width: 100%; background-color: #fff; border-radius: 5px;}
             h1 {text-align: center; color: #5D6975;}
             h2 {margin-top: 30px; color: #5D6975;}
             p, li {line-height: 1.6;}
@@ -29,19 +29,21 @@ function unique_plugin_smart_home_page() {
             input[type=text], select {width: 50%; /* update this line */ padding: 1px 1px; margin: 1px 0; display: inline-block; border: 1px solid #ccc; border-radius: 1px; box-sizing: border-box;}
             .new-dropdown-section {margin-top: 30px;}
             .new-dropdown-section button {margin-top: 10px;}
-            .flex-container {display: flex;flex-direction: row;justify-content: space-between;}
-            .flex-item {width: 48%; }
+            .flex-container {display: flex;flex-direction: row;justify-content: flex-start;}
+            .flex-item-one {width: 20%; }
+            .flex-item-two {width: 26%; }
             .device-settings input[type="text"] {width: 100%;max-width: 300px;padding: 1px 1px;margin: 1px 0;display: inline-block;border: 1px solid #ccc;border-radius: 1px;box-sizing: border-box;}
+            .head-title {}
         </style>
     </head>
     
     
     <body>
         <div class="container">
-            <h1>SKILL</h1>
+            <h1 class="head-title">SKILL</h1>
 
             <div class="flex-container">
-                <div class="flex-item">
+                <div class="flex-item-one">
                     <h2>Device Settings</h2>
                     <div class="device-settings">
                         <label for="api_key">Device Name:</label><br>
@@ -61,7 +63,7 @@ function unique_plugin_smart_home_page() {
                     <div><button type="button">Save Changes</button></div>
                 </div>
 
-                <div class="flex-item">
+                <div class="flex-item-two">
                     <h2>Trigger Condition Settings</h2>
                     <div class="new-dropdown-section">
                         <label for="new_dropdown1">if:</label><br>
