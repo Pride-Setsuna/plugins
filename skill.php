@@ -29,18 +29,18 @@ function unique_plugin_smart_home_page() {
             input[type=text], select {width: 50%; /* update this line */ padding: 1px 1px; margin: 1px 0; display: inline-block; border: 1px solid #ccc; border-radius: 1px; box-sizing: border-box;}
             .new-dropdown-section {margin-top: 30px;}
             .new-dropdown-section button {margin-top: 10px;}
-            .flex-container {display: flex;flex-direction: row;justify-content: flex-start;}
-            .flex-item-one {width: 20%; }
-            .flex-item-two {width: 26%; }
+            .flex-container {display: flex;flex-direction: row;justify-content: flex-start; width: 50%;}
+            .flex-item-one {width: 46%; }
+            .flex-item-two {width: 54%; }
             .device-settings input[type="text"] {width: 100%;max-width: 300px;padding: 1px 1px;margin: 1px 0;display: inline-block;border: 1px solid #ccc;border-radius: 1px;box-sizing: border-box;}
-            .head-title {}
+            .head-title {width: 40%; margin-left: 0;}
         </style>
     </head>
     
     
     <body>
         <div class="container">
-            <h1 class="head-title">SKILL</h1>
+            <div class="head-title"><h1>SKILL</h1></div>
 
             <div class="flex-container">
                 <div class="flex-item-one">
